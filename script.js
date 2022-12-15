@@ -54,15 +54,17 @@ function populate(val) {
     displayedVal.innerHTML += val;
 }
 
-function operate(operator, a, b) {while (operator) {return operator(a, b)};}
+function operate(operator, a, b) {while (operator) {return operator(a, b)}}
 
-function add(a, b) {return a + b;}
+function add(a, b) {return a + b}
 
-function subtract (a, b) {return b - a;}
+function subtract (a, b) {return b - a}
 
-function multiply(a, b) {return a * b;}
+function multiply(a, b) {return a * b}
 
-function power(a, b) {return Math.pow(b, a);}
+function divide(a, b) {return b / a}
+
+function power(a, b) {return Math.pow(b, a)}
 
 function factorial(a) {
     let factArray = [a];
