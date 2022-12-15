@@ -10,8 +10,5 @@ body {
 
 #display {
     border: 3px solid black;
-}
-
-#display > h1 {
-    flex-direction: row-reverse;
+    text-align: right;
 }
