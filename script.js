@@ -54,7 +54,12 @@ function populate(val) {
     displayedVal.innerHTML += val;
 }
 
-function operate(operator, a, b) {while (operator) {return operator(a, b)}}
+function operate(operator, a, b) {while (operator) {
+    if ((operator(a, b) % 1) === 0) {
+        return operator(a, b);
+    } else {
+        return operator(a, b).toFixed(2)}}
+    }
 
 function add(a, b) {return a + b}
 
