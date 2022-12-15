@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#calcContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#display {
+    border: 3px solid black;
+}
+
+#display > h1 {
+    flex-direction: row-reverse;
+}
